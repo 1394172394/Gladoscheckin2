@@ -15,10 +15,10 @@ on:
 jobs:
   build:
     name: glados checkin
-    runs-on: ubuntu-20.04 # 将 ubuntu-latest 改为 ubuntu-20.04
+    runs-on: ubuntu-latest # 将 ubuntu-latest 改为 ubuntu-20.04
     strategy:
       matrix:
-        python-version: [3.8]
+        python-version: [3.11]
 
     steps:
     - uses: actions/checkout@v4
